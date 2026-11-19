@@ -4,7 +4,7 @@
 #include <LiquidCrystal.h>
 
 // Set up LiquidCrystal class and variables
-const int rs = 50, e = 51, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
+const int rs = 12, e = 11, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
 
 LiquidCrystal lcd(rs, e, d4, d5, d6, d7);
 
@@ -12,7 +12,7 @@ LiquidCrystal lcd(rs, e, d4, d5, d6, d7);
 const byte R = 4;
 const byte C = 4;
 
-byte rp[R] = {13, 12, 11, 10};
+byte rp[R] = {13, A0, A1, 10};
 byte cp[C] = {9, 8, 7, 6};
 
 char key[R][C] = {
